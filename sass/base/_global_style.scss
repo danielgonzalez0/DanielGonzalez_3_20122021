@@ -1,0 +1,26 @@
+/*box-sizing set up*/
+
+* {
+  box-sizing: inherit;
+}
+
+/*common styles definition*/
+
+body {
+  font-family: $font-family-text;
+  color: $text_primary_color;
+  font-size: $default_font_size;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}

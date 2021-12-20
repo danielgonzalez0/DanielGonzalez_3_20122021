@@ -1,7 +1,31 @@
 /*source googlefont*/
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 /*font-family: 'Shrikhand', cursive;*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap');
 /*font-family: 'Roboto', sans-serif;*/
+/*box-sizing set up*/
+* {
+  box-sizing: inherit;
+}
+
+/*common styles definition*/
+body {
+  font-family: 'Roboto', 'Times New Roman', Times, sans-serif;
+  color: #000000;
+  font-size: 16pt;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
 
 /*# sourceMappingURL=styles.css.map */
