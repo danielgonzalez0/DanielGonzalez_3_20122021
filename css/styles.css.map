@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,qBAAqB;AACb,8EAAsE;AAC9E,sCAAsC;AAC9B,6GAAqG;AAC7G,sCAAsC",
+"sources": ["../sass/base/_typography.scss"],
 "names": [],
 "file": "styles.css"
 }
