@@ -1,0 +1,29 @@
+/******************header start*************************/
+
+header {
+  height: $header-height;
+  display: flex;
+  position: relative;
+  margin: 10px 0;
+  figure {
+    width: 200px;
+    align-self: center;
+    margin: 0 auto;
+  }
+}
+.header__btn {
+  height: $header-height;
+  width: $header-height;
+  background-color: white;
+  border: none;
+  position: absolute;
+  a {
+    color: $text_primary_color;
+    font-size: $font-size-big;
+  }
+}
+.header__btn--visible {
+  display: none;
+}
+
+/******************header end*************************/
