@@ -1,0 +1,24 @@
+/*****************presentation section start*************/
+
+.presentation {
+  height: $presentation-height;
+  background-color: $background_color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentation__h2 {
+  margin: 0;
+  font-size: $font-size-xbig;
+  text-align: center;
+}
+
+.presentation__text {
+  color: $text_tertiary_color;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/*****************presentation section end***************/

@@ -1,0 +1,15 @@
+@mixin box-shadow(
+  $offset-x: $default-offset-x,
+  $offset-y: $default-offset-x,
+  $blur-radius: $default-radius,
+  $shadow-color: $default-shadow-color,
+  $inset: false
+) {
+  @if $inset {
+    box-shadow: inset $offset-x $offset-y $blur-radius $shadow-color;
+  } @else {
+    box-shadow: $offset-x $offset-y $blur-radius $shadow-color;
+  }
+}
+
+//  @include box-shadow($default-offset-x, $default-offset-x, $default-radius, $default-shadow-color)

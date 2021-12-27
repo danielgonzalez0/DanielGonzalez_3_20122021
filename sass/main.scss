@@ -2,6 +2,8 @@
 @import 'utils/variables';
 @import 'utils/mixins';
 @import 'utils/extensions';
+@import 'components/main-btn';
 @import 'base/global_style';
-@import 'pages/header';
+@import 'layouts/header';
 @import 'pages/localisation-section';
+@import 'pages/presentation-section';

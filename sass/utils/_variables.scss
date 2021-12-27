@@ -4,6 +4,8 @@ $secondary_color: #ff79da;
 $tertiary_color: #99e2d0;
 $background_color: rgb(240, 240, 240);
 $text_primary_color: #000000;
+$text_secondary_color: #fff;
+$text_tertiary_color: grey;
 
 //font families
 $font-family-text: 'Roboto', 'Times New Roman', Times, sans-serif;
@@ -15,8 +17,18 @@ $font-family-logo: 'Shrikhand', 'cursive', 'Times New Roman', Times, serif;
 $default_font_size: 16pt;
 
 $font-size-regular: 1rem;
+$font-size-xsmall: $font-size-regular * 0.5;
 $font-size-small: $font-size-regular * 0.75;
 $font-size-big: $font-size-regular * 1.5;
+$font-size-xbig: $font-size-regular * 2;
 
 //section height:
 $header-height: 50px;
+$presentation-height: 350px;
+
+//box-shadow default settings:
+$default-offset-x: 5px;
+$default-offset-y: 5px;
+$default-radius: 5px;
+$default-shadow-color: darken($background_color, 15%);
+$hover-shadow-color: darken($background_color, 20%);
