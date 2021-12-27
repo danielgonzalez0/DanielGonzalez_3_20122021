@@ -12,10 +12,10 @@ header {
   }
 }
 .header__btn {
+  @extend %border_default;
   height: $header-height;
   width: $header-height;
   background-color: white;
-  border: none;
   position: absolute;
   a {
     color: $text_primary_color;

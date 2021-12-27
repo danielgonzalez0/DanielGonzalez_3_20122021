@@ -3,6 +3,11 @@
 /*font-family: 'Shrikhand', cursive;*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
 /*font-family: 'Roboto', sans-serif;*/
+.header__btn, .form__btn {
+  /******btn & link default style*******/
+  border: none;
+  text-decoration: none; }
+
 /*box-sizing set up*/
 * {
   box-sizing: inherit; }
@@ -39,7 +44,6 @@ header {
   height: 50px;
   width: 50px;
   background-color: white;
-  border: none;
   position: absolute; }
   .header__btn a {
     color: #000000;
@@ -49,5 +53,24 @@ header {
   display: none; }
 
 /******************header end*************************/
+/*****************lacalisation section start**********************/
+form {
+  background-color: #e3e3e3;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  padding-left: 100px; }
+
+form input {
+  border: none;
+  background-color: #e3e3e3; }
+  form input:focus {
+    outline: none; }
+
+.form__btn {
+  background-color: #e3e3e3;
+  width: 30px; }
+
+/*****************lacalisation section end************************/
 
 /*# sourceMappingURL=styles.css.map */

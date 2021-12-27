@@ -1,0 +1,25 @@
+/*****************lacalisation section start**********************/
+
+form {
+  background-color: darken($background_color, 5%);
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  padding-left: 100px;
+}
+
+form input {
+  border: none;
+  background-color: darken($background_color, 5%);
+  &:focus {
+    outline: none;
+  }
+}
+
+.form__btn {
+  @extend %border_default;
+  background-color: darken($background_color, 5%);
+  width: 30px;
+}
+
+/*****************lacalisation section end************************/
