@@ -2,31 +2,91 @@
 
 .selection {
   height: $selection-height;
-  background-color: blue;
 }
 
 .selection__h2 {
   padding: 50px 0 30px 30px;
   margin: 0;
-  font-size: $font-size-xbig;
+  font-size: $font-size-xxbig;
 }
 
 .selection__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  width: 85%;
+
+  margin: 0 auto;
 }
 
 .selection__btn {
+  @extend %border_default;
+  @include border-radius('all', 20px);
+  font-weight: bold;
+  font-size: $font-size-big;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+  @include box-shadow(
+    $default-offset-x,
+    $default-offset-x,
+    $default-blur,
+    $default-shadow-color
+  );
+  & i {
+    display: block;
+    flex: 0 0 20%;
+    font-size: $font-size-xbig;
+  }
+  &:hover {
+    @include box-shadow(
+      $default-offset-x,
+      $default-offset-x,
+      $default-blur,
+      darken($default-shadow-color, 10%)
+    );
+  }
 }
 
-.selection__btn--modified {
+.selection__btn__color {
+  background-color: $background_color;
+  & i {
+    color: $text_tertiary_color;
+  }
+  &:hover {
+    background-color: lighten($background_color, 1%);
+  }
+}
+
+.selection__btn__color--modified {
+  background-color: lighten($primary_color, 35%);
+  & i {
+    color: $primary_color;
+  }
+  &:hover {
+    background-color: lighten($primary_color, 36%);
+  }
 }
 
 .selection__btn span {
-}
-
-.selection__btn i {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include border-radius('all', 30px);
+  color: $text_secondary_color;
+  background-color: $primary_color;
+  font-size: $font-size-regular;
+  position: absolute;
+  left: -15px;
 }
 
 .selection__btn p {
+  flex: 0 0 80%;
+  text-align: start;
 }
 
 /*****************selection section end***************/

@@ -3,7 +3,7 @@
 /*font-family: 'Shrikhand', cursive;*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
 /*font-family: 'Roboto', sans-serif;*/
-.main_btn, .header__btn, .form__btn {
+.main_btn, .header__btn, .form__btn, .selection__btn {
   /******btn & link default style*******/
   border: none;
   text-decoration: none; }
@@ -15,10 +15,10 @@
   padding: 20px 25px;
   border-radius: 40px;
   cursor: pointer;
-  box-shadow: 5px 5px 5px #cacaca; }
+  box-shadow: 5px 5px 5px gainsboro; }
   .main_btn:hover {
     background-image: linear-gradient(#ff93e1, #a16be0);
-    box-shadow: 5px 5px 5px #b0b0b0; }
+    box-shadow: 5px 5px 5px #c2c2c2; }
 
 /*box-sizing set up*/
 * {
@@ -67,28 +67,29 @@ header {
 /******************header end*************************/
 /*****************lacalisation section start**********************/
 form {
-  background-color: #e3e3e3;
+  background-color: #e8e8e8;
   padding: 15px 0;
   display: flex;
   justify-content: center;
   padding-left: 100px;
-  box-shadow: inset 0 5px 5px #cacaca; }
+  box-shadow: inset 0 5px 5px gainsboro; }
 
 form input {
   border: none;
-  background-color: #e3e3e3; }
+  font-weight: bold;
+  background-color: #e8e8e8; }
   form input:focus {
     outline: none; }
 
 .form__btn {
-  background-color: #e3e3e3;
+  background-color: #e8e8e8;
   width: 30px; }
 
 /*****************lacalisation section end************************/
 /*****************presentation section start*************/
 .presentation {
   height: 350px;
-  background-color: #f0f0f0;
+  background-color: whitesmoke;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -107,13 +108,67 @@ form input {
 /*****************presentation section end***************/
 /*****************selection section start*************/
 .selection {
-  height: 450px;
-  background-color: blue; }
+  height: 450px; }
 
 .selection__h2 {
   padding: 50px 0 30px 30px;
   margin: 0;
   font-size: 2rem; }
+
+.selection__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  width: 85%;
+  margin: 0 auto; }
+
+.selection__btn {
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+  box-shadow: 5px 5px 5px gainsboro; }
+  .selection__btn i {
+    display: block;
+    flex: 0 0 20%;
+    font-size: 1.5rem; }
+  .selection__btn:hover {
+    box-shadow: 5px 5px 5px #c2c2c2; }
+
+.selection__btn__color {
+  background-color: whitesmoke; }
+  .selection__btn__color i {
+    color: grey; }
+  .selection__btn__color:hover {
+    background-color: #f8f8f8; }
+
+.selection__btn__color--modified {
+  background-color: #f2eafb; }
+  .selection__btn__color--modified i {
+    color: #9356dc; }
+  .selection__btn__color--modified:hover {
+    background-color: #f4eefc; }
+
+.selection__btn span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  color: #fff;
+  background-color: #9356dc;
+  font-size: 1rem;
+  position: absolute;
+  left: -15px; }
+
+.selection__btn p {
+  flex: 0 0 80%;
+  text-align: start; }
 
 /*****************selection section end***************/
 

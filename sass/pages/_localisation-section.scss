@@ -19,6 +19,7 @@ form {
 
 form input {
   border: none;
+  font-weight: bold;
   background-color: darken($background_color, 5%);
   &:focus {
     outline: none;
