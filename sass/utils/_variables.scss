@@ -2,6 +2,7 @@
 $primary_color: #9356dc;
 $secondary_color: #ff79da;
 $tertiary_color: #99e2d0;
+$fourth_color: #fff;
 $background_color: rgb(245, 245, 245);
 $text_primary_color: #000000;
 $text_secondary_color: #fff;
@@ -28,6 +29,7 @@ $font-size-xxbig: $font-size-regular * 2;
 $header-height: 50px;
 $presentation-height: 350px;
 $selection-height: 450px;
+$card_height: 350px;
 
 //box-shadow default settings:
 $default-offset-x: 5px;
@@ -38,3 +40,4 @@ $hover-shadow-color: darken($background_color, 15%);
 
 //border-radius:
 $defaultRadius: 5px;
+$cardRadius: 20px;

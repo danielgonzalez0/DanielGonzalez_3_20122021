@@ -3,7 +3,7 @@
 /*font-family: 'Shrikhand', cursive;*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
 /*font-family: 'Roboto', sans-serif;*/
-.main_btn, .header__btn, .form__btn, .selection__btn {
+.main_btn, .header__btn, .form__btn, .selection__btn, .btn-like {
   /******btn & link default style*******/
   border: none;
   text-decoration: none; }
@@ -171,5 +171,97 @@ form input {
   text-align: start; }
 
 /*****************selection section end***************/
+/**********************restaurant list start********************************/
+.card_list {
+  background-color: whitesmoke;
+  padding: 50px 0; }
+
+.article_container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  justify-content: center; }
+
+.card_list__title {
+  font-size: 2rem;
+  padding-left: 30px; }
+
+.card_container {
+  position: relative;
+  height: 350px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px gainsboro;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  max-width: 550px;
+  width: 100%; }
+  .card_container:hover {
+    box-shadow: 5px 5px 5px #c2c2c2; }
+
+.article__card {
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  color: #000000; }
+
+.article__card__figure {
+  border-radius: 20px 20px 0 0;
+  margin: 0;
+  height: 65%;
+  width: 100%; }
+
+.article__card__figure .new {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #278870;
+  background-color: #99e2d0;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px; }
+
+.article__card__figure img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 20px 0 0; }
+
+.article__card__content {
+  height: 35%;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 0 0 20px 20px;
+  padding-left: 15px; }
+
+.article__card__content__leftCol {
+  flex: 0 0 80%; }
+
+.btn-like {
+  position: absolute;
+  right: 30px;
+  bottom: 45px;
+  z-index: 1;
+  height: 40px;
+  width: 40px;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: #fff; }
+  .btn-like:hover {
+    color: #9356dc; }
+
+.article__card__title {
+  margin: 0;
+  font-size: 1.5rem; }
+
+.article__card__text {
+  margin: 0;
+  font-size: 1.25rem;
+  padding-top: 10px; }
+
+/**********************restaurant list end**********************************/
 
 /*# sourceMappingURL=styles.css.map */
