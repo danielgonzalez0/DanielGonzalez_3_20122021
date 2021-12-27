@@ -9,7 +9,7 @@ form {
   @include box-shadow(
       0,
       $default-offset-x,
-      $default-radius,
+      $default-blur,
       $default-shadow-color,
       inset
     )

@@ -13,3 +13,7 @@
 }
 
 //  @include box-shadow($default-offset-x, $default-offset-x, $default-radius, $default-shadow-color)
+
+@mixin border-radius($corners: 'all', $radius: $defaultRadius) {
+  border-radius: radiusValue($corners, $radius);
+}

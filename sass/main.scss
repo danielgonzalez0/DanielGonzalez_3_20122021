@@ -1,5 +1,6 @@
 @import 'base/typography';
 @import 'utils/variables';
+@import 'utils/functions';
 @import 'utils/mixins';
 @import 'utils/extensions';
 @import 'components/main-btn';
@@ -7,3 +8,4 @@
 @import 'layouts/header';
 @import 'pages/localisation-section';
 @import 'pages/presentation-section';
+@import 'pages/selection-section';
