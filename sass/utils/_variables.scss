@@ -22,6 +22,7 @@ $font-size-regular: 1rem;
 $font-size-xxsmall: $font-size-regular * 0.25;
 $font-size-xsmall: $font-size-regular * 0.5;
 $font-size-small: $font-size-regular * 0.75;
+$font-size-regular-up: $font-size-regular * 1.15;
 $font-size-big: $font-size-regular * 1.25;
 $font-size-xbig: $font-size-regular * 1.5;
 $font-size-xxbig: $font-size-regular * 2;
@@ -31,6 +32,8 @@ $header-height: 50px;
 $presentation-height: 350px;
 $selection-height: 450px;
 $card_height: 350px;
+$bkg-menu-height: 400px;
+$btn-menu-height: 70px;
 
 //box-shadow default settings:
 $default-offset-x: 5px;
@@ -41,4 +44,5 @@ $hover-shadow-color: darken($background_color, 15%);
 
 //border-radius:
 $defaultRadius: 5px;
+$btnMenuRadius: 15px;
 $cardRadius: 20px;

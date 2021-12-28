@@ -1,0 +1,169 @@
+/*********************menu page start************************/
+
+.menu-wrapper {
+  background-color: $background_color;
+}
+
+/*****bkg layout*****/
+.bkg-menu {
+  height: $bkg-menu-height;
+  position: relative;
+  display: flex;
+}
+
+.bkg-menu__figure {
+  width: 100%;
+  margin: 0;
+  & img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*******menu section layout******/
+
+.menu {
+  @include border-radius('top', 40px);
+  background-color: $background_color;
+  position: relative;
+  top: -80px;
+  padding: 40px 20px 0 20px;
+}
+
+/**** title layout****/
+.menu__card_name {
+  font-family: $font-family-Title;
+  font-size: $font-size-regular;
+  & .btn-like {
+    top: 60px;
+    background-color: $background_color;
+  }
+}
+
+/******courses section layout*****/
+.menu__detail {
+  display: flex;
+  flex-direction: column;
+}
+
+/******courses title layout*****/
+
+.menu__detail__title {
+  width: 60px;
+  border-bottom: solid 5px $tertiary_color;
+  font-size: $font-size-xbig;
+}
+
+/******** dish btn layout*******/
+
+.menu__detail__btn-dish {
+  cursor: pointer;
+  position: relative;
+  @extend %border_default;
+  background-color: $fourth_color;
+  height: $btn-menu-height;
+  margin-bottom: 20px;
+  @include border-radius('all', $btnMenuRadius);
+  @include box-shadow(
+    $default-offset-x,
+    $default-offset-x,
+    $default-blur,
+    $default-shadow-color
+  );
+  display: flex;
+  &:hover {
+    @include box-shadow(
+      $default-offset-x,
+      $default-offset-x,
+      $default-blur,
+      darken($default-shadow-color, 10%)
+    );
+  }
+}
+
+/****btn title & description layout******/
+
+.dish__leftCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 10px 0 0 10px;
+
+  width: 60%;
+}
+
+.dish__title {
+  margin: 0;
+  font-size: $font-size-big;
+  flex: 0 0 50%;
+  width: 100%;
+  text-align: start;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: '...';
+}
+
+.dish__detail {
+  margin: 0;
+  font-size: $font-size-regular-up;
+  color: $text_tertiary_color;
+  flex: 0 0 50%;
+  width: 100%;
+  text-align: start;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: '...';
+}
+
+/****btn price layout******/
+
+.dish__price {
+  display: block;
+  width: $btn-menu-height;
+  font-size: $font-size-regular-up;
+  font-weight: bold;
+  height: calc(70px - 10px);
+  position: absolute;
+  right: $btn-menu-height;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+
+/****btn icon check layout******/
+
+.dish__icon-check {
+  position: absolute;
+  right: 0;
+  width: $btn-menu-height;
+  height: $btn-menu-height;
+  background-color: $tertiary_color;
+  font-size: $font-size-xbig;
+  @include border-radius('right', $btnMenuRadius);
+  border: solid 1.5px $tertiary_color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & i {
+    color: $fourth_color;
+  }
+}
+
+/*****order button layout******/
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.order_btn {
+  width: 180px;
+}
+
+/*********************menu page end************************/
