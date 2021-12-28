@@ -52,7 +52,7 @@
 .article__card__figure {
   @include border-radius('top', $cardRadius);
   margin: 0;
-  height: 65%;
+  height: 70%;
   width: 100%;
 }
 
@@ -76,7 +76,7 @@
 }
 
 .article__card__content {
-  height: 35%;
+  height: 30%;
   width: 100%;
   background-color: $fourth_color;
   display: flex;
