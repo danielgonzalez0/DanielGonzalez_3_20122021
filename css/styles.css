@@ -345,6 +345,12 @@ footer {
   display: flex; }
   .menu__detail__btn-dish:hover {
     box-shadow: 5px 5px 5px #c2c2c2; }
+  .menu__detail__btn-dish:hover .dish__icon-check {
+    visibility: visible; }
+  .menu__detail__btn-dish:hover .dish__price {
+    right: 70px; }
+  .menu__detail__btn-dish:hover .dish__leftCol {
+    width: 60%; }
 
 /****btn title & description layout******/
 .dish__leftCol {
@@ -353,7 +359,7 @@ footer {
   justify-content: space-around;
   align-items: flex-start;
   padding: 10px 0 0 10px;
-  width: 60%; }
+  width: 80%; }
 
 .dish__title {
   margin: 0;
@@ -384,7 +390,7 @@ footer {
   font-weight: bold;
   height: calc(70px - 10px);
   position: absolute;
-  right: 70px;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -402,7 +408,8 @@ footer {
   border: solid 1.5px #99e2d0;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  visibility: hidden; }
   .dish__icon-check i {
     color: #fff; }
 

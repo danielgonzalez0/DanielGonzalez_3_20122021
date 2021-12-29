@@ -71,6 +71,17 @@
   &:hover {
     @include _DG_box-shadow_default($shadow-color: $hover-shadow-color);
   }
+
+  &:hover .dish__icon-check {
+    visibility: visible;
+  }
+
+  &:hover .dish__price {
+    right: $btn-menu-height;
+  }
+  &:hover .dish__leftCol {
+    width: 60%;
+  }
 }
 
 /****btn title & description layout******/
@@ -82,7 +93,7 @@
   align-items: flex-start;
   padding: 10px 0 0 10px;
 
-  width: 60%;
+  width: 80%;
 }
 
 .dish__title {
@@ -117,7 +128,7 @@
   font-weight: bold;
   height: calc(70px - 10px);
   position: absolute;
-  right: $btn-menu-height;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -138,7 +149,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  visibility: hidden;
   & i {
     color: $fourth_color;
   }
