@@ -1,4 +1,4 @@
-/*****************lacalisation section start**********************/
+/*****************localisation section start**********************/
 
 form {
   background-color: darken($background_color, 5%);
@@ -6,30 +6,22 @@ form {
   display: flex;
   justify-content: center;
   padding-left: 100px;
-  @include box-shadow(
-      0,
-      $default-offset-x,
-      $default-blur,
-      $default-shadow-color,
-      inset
-    )
-    //box-shadow: 0px 5px 5px darken($background_color, 20%) inset;
-;
-}
 
-form input {
-  border: none;
-  font-weight: bold;
-  background-color: darken($background_color, 5%);
-  &:focus {
-    outline: none;
+  @include _DG_box-shadow_default($inset: 'yes');
+
+  & input {
+    border: none;
+    font-weight: bold;
+    background-color: darken($background_color, 5%);
+    &:focus {
+      outline: none;
+    }
   }
-}
-
-.form__btn {
-  @extend %border_default;
-  background-color: darken($background_color, 5%);
-  width: 30px;
+  & .form__btn {
+    @extend %border_default;
+    background-color: darken($background_color, 5%);
+    width: 30px;
+  }
 }
 
 /*****************lacalisation section end************************/

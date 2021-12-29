@@ -3,7 +3,7 @@
 /*font-family: 'Shrikhand', cursive;*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
 /*font-family: 'Roboto', sans-serif;*/
-.main_btn, .header__btn, .form__btn, .selection__btn, .btn-like, .footer__link, .menu__detail__btn-dish {
+.main_btn, .header__btn, form .form__btn, .selection__btn, .btn-like, .footer__link, .menu__detail__btn-dish {
   /******btn & link default style*******/
   border: none;
   text-decoration: none; }
@@ -65,25 +65,23 @@ header {
   display: none; }
 
 /******************header end*************************/
-/*****************lacalisation section start**********************/
+/*****************localisation section start**********************/
 form {
   background-color: #e8e8e8;
   padding: 15px 0;
   display: flex;
   justify-content: center;
   padding-left: 100px;
-  box-shadow: inset 0 5px 5px gainsboro; }
-
-form input {
-  border: none;
-  font-weight: bold;
-  background-color: #e8e8e8; }
-  form input:focus {
-    outline: none; }
-
-.form__btn {
-  background-color: #e8e8e8;
-  width: 30px; }
+  box-shadow: inset 5px 5px 5px gainsboro; }
+  form input {
+    border: none;
+    font-weight: bold;
+    background-color: #e8e8e8; }
+    form input:focus {
+      outline: none; }
+  form .form__btn {
+    background-color: #e8e8e8;
+    width: 30px; }
 
 /*****************lacalisation section end************************/
 /*****************presentation section start*************/
@@ -165,7 +163,6 @@ form input {
   font-size: 1rem;
   position: absolute;
   left: -15px; }
-
 .selection__btn p {
   flex: 0 0 80%;
   text-align: start; }
@@ -210,23 +207,21 @@ form input {
   margin: 0;
   height: 70%;
   width: 100%; }
-
-.article__card__figure .new {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  color: #278870;
-  background-color: #99e2d0;
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 10px; }
-
-.article__card__figure img {
-  display: block;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  border-radius: 20px 20px 0 0; }
+  .article__card__figure .new {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #278870;
+    background-color: #99e2d0;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px; }
+  .article__card__figure img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0; }
 
 .article__card__content {
   height: 30%;
@@ -268,6 +263,18 @@ footer {
   background-color: #383838;
   color: #fff;
   padding: 40px 20px; }
+  footer ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    font-size: 1.25rem; }
+  footer li {
+    padding: 5px 0; }
+  footer i {
+    display: block;
+    width: 20px;
+    height: 20px;
+    font-size: 1rem; }
 
 .footer__title-logo {
   margin: 0;
@@ -276,23 +283,8 @@ footer {
   padding-bottom: 20px;
   color: #e6e6e6; }
 
-footer ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin: 0;
-  font-size: 1.25rem; }
-
-footer li {
-  padding: 5px 0; }
-
 .footer__link {
   color: #fff; }
-
-footer i {
-  display: block;
-  width: 20px;
-  height: 20px;
-  font-size: 1rem; }
 
 /***********************footer end***********************/
 /*********************menu page start************************/

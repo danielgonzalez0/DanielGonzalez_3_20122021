@@ -1,7 +1,7 @@
 @mixin box-shadow(
   $offset-x: $default-offset-x,
-  $offset-y: $default-offset-x,
-  $blur-radius: $default-radius,
+  $offset-y: $default-offset-y,
+  $blur-radius: $default-blur,
   $shadow-color: $default-shadow-color,
   $inset: false
 ) {
@@ -17,3 +17,19 @@
 @mixin border-radius($corners: 'all', $radius: $defaultRadius) {
   border-radius: radiusValue($corners, $radius);
 }
+
+@mixin _DG_box-shadow_default(
+  $inset: 'no',
+  $offset-x: $default-offset-x,
+  $offset-y: $default-offset-y,
+  $blur-radius: $default-blur,
+  $shadow-color: $default-shadow-color
+) {
+  @if $inset == 'yes' {
+    box-shadow: inset $offset-x $offset-y $blur-radius $shadow-color;
+  } @else {
+    box-shadow: $offset-x $offset-y $blur-radius $shadow-color;
+  }
+}
+// you only need to specify the values that change when you include the mixin
+//ex: @include _DG_box-shadow_default($inset: 'yes', $shadow-color: $primary_color);

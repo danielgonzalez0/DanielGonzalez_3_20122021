@@ -4,6 +4,24 @@ footer {
   background-color: lighten($fiveth_color, 22%);
   color: $text_secondary_color;
   padding: 40px 20px;
+
+  & ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    font-size: $font-size-big;
+  }
+
+  & li {
+    padding: 5px 0;
+  }
+
+  & i {
+    display: block;
+    width: 20px;
+    height: 20px;
+    font-size: $font-size-regular;
+  }
 }
 
 .footer__title-logo {
@@ -14,26 +32,9 @@ footer {
   color: darken($text_secondary_color, 10%);
 }
 
-footer ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin: 0;
-  font-size: $font-size-big;
-}
-
-footer li {
-  padding: 5px 0;
-}
-
 .footer__link {
   @extend %border_default;
   color: $text_secondary_color;
 }
 
-footer i {
-  display: block;
-  width: 20px;
-  height: 20px;
-  font-size: $font-size-regular;
-}
 /***********************footer end***********************/

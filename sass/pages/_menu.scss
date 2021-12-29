@@ -66,20 +66,10 @@
   height: $btn-menu-height;
   margin-bottom: 20px;
   @include border-radius('all', $btnMenuRadius);
-  @include box-shadow(
-    $default-offset-x,
-    $default-offset-x,
-    $default-blur,
-    $default-shadow-color
-  );
+  @include _DG_box-shadow_default();
   display: flex;
   &:hover {
-    @include box-shadow(
-      $default-offset-x,
-      $default-offset-x,
-      $default-blur,
-      darken($default-shadow-color, 10%)
-    );
+    @include _DG_box-shadow_default($shadow-color: $hover-shadow-color);
   }
 }
 
