@@ -342,11 +342,16 @@ footer {
   margin-bottom: 20px;
   border-radius: 15px;
   box-shadow: 5px 5px 5px gainsboro;
-  display: flex; }
+  display: flex;
+  transition: box-shadow 0.5s;
+  /****hover effect btn menu*****/ }
   .menu__detail__btn-dish:hover {
     box-shadow: 5px 5px 5px #c2c2c2; }
   .menu__detail__btn-dish:hover .dish__icon-check {
-    visibility: visible; }
+    width: 70px;
+    z-index: 1; }
+    .menu__detail__btn-dish:hover .dish__icon-check i {
+      transform: rotate(360deg); }
   .menu__detail__btn-dish:hover .dish__price {
     right: 70px; }
   .menu__detail__btn-dish:hover .dish__leftCol {
@@ -359,7 +364,8 @@ footer {
   justify-content: space-around;
   align-items: flex-start;
   padding: 10px 0 0 10px;
-  width: 80%; }
+  width: 80%;
+  transition: width 0.5s; }
 
 .dish__title {
   margin: 0;
@@ -394,13 +400,15 @@ footer {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  transition: right 1s; }
 
 /****btn icon check layout******/
 .dish__icon-check {
   position: absolute;
+  z-index: -1;
   right: 0;
-  width: 70px;
+  width: 0;
   height: 70px;
   background-color: #99e2d0;
   font-size: 1.5rem;
@@ -409,9 +417,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  visibility: hidden; }
+  transition: z-index 1s, width 1s; }
   .dish__icon-check i {
-    color: #fff; }
+    color: #fff;
+    transform: rotate(60deg);
+    transition: transform 0.5s; }
 
 /*****order button layout******/
 .btn-wrapper {

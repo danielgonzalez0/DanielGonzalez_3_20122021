@@ -68,17 +68,25 @@
   @include border-radius('all', $btnMenuRadius);
   @include _DG_box-shadow_default();
   display: flex;
+  transition: box-shadow 0.5s;
+
+  /****hover effect btn menu*****/
   &:hover {
     @include _DG_box-shadow_default($shadow-color: $hover-shadow-color);
   }
 
   &:hover .dish__icon-check {
-    visibility: visible;
+    width: $btn-menu-height;
+    z-index: 1;
+    & i {
+      transform: rotate(360deg);
+    }
   }
 
   &:hover .dish__price {
     right: $btn-menu-height;
   }
+
   &:hover .dish__leftCol {
     width: 60%;
   }
@@ -92,8 +100,8 @@
   justify-content: space-around;
   align-items: flex-start;
   padding: 10px 0 0 10px;
-
   width: 80%;
+  transition: width 0.5s;
 }
 
 .dish__title {
@@ -133,14 +141,16 @@
   justify-content: center;
   align-items: flex-end;
   padding-bottom: 10px;
+  transition: right 1s;
 }
 
 /****btn icon check layout******/
 
 .dish__icon-check {
   position: absolute;
+  z-index: -1;
   right: 0;
-  width: $btn-menu-height;
+  width: 0;
   height: $btn-menu-height;
   background-color: $tertiary_color;
   font-size: $font-size-xbig;
@@ -149,9 +159,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  visibility: hidden;
+  transition: z-index 1s, width 1s;
   & i {
     color: $fourth_color;
+    transform: rotate(60deg);
+    transition: transform 0.5s;
   }
 }
 
