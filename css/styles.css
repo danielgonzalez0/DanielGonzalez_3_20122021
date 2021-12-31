@@ -365,7 +365,7 @@ footer {
   align-items: flex-start;
   padding: 10px 0 0 10px;
   width: 80%;
-  transition: width 0.75s ease-in-out; }
+  transition: width 0.3s ease-in-out; }
 
 .dish__title {
   margin: 0;
@@ -401,7 +401,7 @@ footer {
   justify-content: center;
   align-items: flex-end;
   padding-bottom: 10px;
-  transition: right 1s ease-in-out; }
+  transition: right 0.5s ease-in-out; }
 
 /****btn icon check layout******/
 .dish__icon-check {
@@ -418,11 +418,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: z-index 1s, width 1s ease-in-out; }
+  transition: z-index 0.5s, width 0.5s ease-in-out; }
   .dish__icon-check i {
     color: #fff;
     transform: rotate(60deg);
-    transition: transform 0.5s ease-in-out; }
+    transition: transform 0.25s ease-in-out; }
 
 /*****order button layout******/
 .btn-wrapper {

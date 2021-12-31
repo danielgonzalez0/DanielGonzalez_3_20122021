@@ -101,7 +101,7 @@
   align-items: flex-start;
   padding: 10px 0 0 10px;
   width: 80%;
-  transition: width 0.75s ease-in-out; //transition
+  transition: width 0.3s ease-in-out; //transition
 }
 
 .dish__title {
@@ -141,7 +141,7 @@
   justify-content: center;
   align-items: flex-end;
   padding-bottom: 10px;
-  transition: right 1s ease-in-out; //transition
+  transition: right 0.5s ease-in-out; //transition
 }
 
 /****btn icon check layout******/
@@ -160,11 +160,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: z-index 1s, width 1s ease-in-out; //transition
+  transition: z-index 0.5s, width 0.5s ease-in-out; //transition
   & i {
     color: $fourth_color;
     transform: rotate(60deg);
-    transition: transform 0.5s ease-in-out; //transition
+    transition: transform 0.25s ease-in-out; //transition
   }
 }
 
