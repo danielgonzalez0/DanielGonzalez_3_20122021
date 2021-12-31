@@ -68,7 +68,7 @@
   @include border-radius('all', $btnMenuRadius);
   @include _DG_box-shadow_default();
   display: flex;
-  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s ease-in-out; //transition
 
   /****hover effect btn menu*****/
   &:hover {
@@ -101,7 +101,7 @@
   align-items: flex-start;
   padding: 10px 0 0 10px;
   width: 80%;
-  transition: width 0.5s;
+  transition: width 0.75s ease-in-out; //transition
 }
 
 .dish__title {
@@ -141,7 +141,7 @@
   justify-content: center;
   align-items: flex-end;
   padding-bottom: 10px;
-  transition: right 1s;
+  transition: right 1s ease-in-out; //transition
 }
 
 /****btn icon check layout******/
@@ -150,6 +150,7 @@
   position: absolute;
   z-index: -1;
   right: 0;
+  top: 0;
   width: 0;
   height: $btn-menu-height;
   background-color: $tertiary_color;
@@ -159,11 +160,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: z-index 1s, width 1s;
+  transition: z-index 1s, width 1s ease-in-out; //transition
   & i {
     color: $fourth_color;
     transform: rotate(60deg);
-    transition: transform 0.5s;
+    transition: transform 0.5s ease-in-out; //transition
   }
 }
 
