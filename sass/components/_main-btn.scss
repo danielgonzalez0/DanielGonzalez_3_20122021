@@ -8,11 +8,76 @@
   @include border-radius('all', 40px);
   cursor: pointer;
   @include _DG_box-shadow_default();
+  position: relative;
+  z-index: 1;
+
   &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    right: 0;
+    padding: 32px 25px; // ajdustment due to superposition issue
+    @include border-radius('all', 40px);
     background-image: linear-gradient(
       lighten($secondary_color, 5%),
       lighten($primary_color, 5%)
     );
     @include _DG_box-shadow_default($shadow-color: $hover-shadow-color);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms;
   }
+}
+
+/********favorite button: 2 icons superposition*******/
+
+//step1: btn layout
+.btn-like {
+  position: absolute;
+  right: 30px;
+  bottom: 45px;
+  z-index: 0;
+  height: 40px;
+  width: 40px;
+  font-size: $font-size-xxbig;
+  cursor: pointer;
+  @extend %border_default;
+  background-color: $fourth_color;
+
+  //step 3: animation on click for empty icon
+  &:active {
+    .btn-like__empty {
+      transform: scale(1);
+      transform-origin: bottom;
+      color: $primary_color;
+    }
+  }
+
+  //step 3: animation on click for full icon
+  &:active .btn-like__full {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+//step2: icon heart full layout & animation
+.btn-like__full {
+  color: $primary_color;
+  position: relative;
+  z-index: -1;
+  bottom: 37px;
+  transform-origin: bottom;
+  transform: scale(0);
+  transition: transform 0.25s;
+}
+
+//step2: icon heart empty layout & animation
+.btn-like__empty {
+  transition: transform 0.25s, color 0.35s;
 }

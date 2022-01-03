@@ -24,7 +24,6 @@
   @include _DG_box-shadow_default();
   margin: 20px;
   display: flex;
-  justify-content: center;
   max-width: 550px;
   width: 100%;
   &:hover {
@@ -37,6 +36,7 @@
   flex-wrap: wrap;
   text-decoration: none;
   color: $text_primary_color;
+  flex: 0 0 100%;
 }
 
 .article__card__figure {
@@ -77,22 +77,6 @@
 
 .article__card__content__leftCol {
   flex: 0 0 80%;
-}
-
-.btn-like {
-  position: absolute;
-  right: 30px;
-  bottom: 45px;
-  z-index: 1;
-  height: 40px;
-  width: 40px;
-  font-size: $font-size-xxbig;
-  cursor: pointer;
-  @extend %border_default;
-  background-color: $fourth_color;
-  &:hover {
-    color: $primary_color;
-  }
 }
 
 .article__card__title {

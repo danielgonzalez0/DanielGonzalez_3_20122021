@@ -76,15 +76,14 @@
   }
 
   &:hover .dish__icon-check {
-    width: $btn-menu-height;
-    z-index: 1;
+    transform: scaleX(1);
     & i {
       transform: rotate(360deg);
     }
   }
 
   &:hover .dish__price {
-    right: $btn-menu-height;
+    transform: translateX(-$btn-menu-height);
   }
 
   &:hover .dish__leftCol {
@@ -141,17 +140,16 @@
   justify-content: center;
   align-items: flex-end;
   padding-bottom: 10px;
-  transition: right 0.5s ease-in-out; //transition
+  transition: transform 0.5s ease-in-out; //transition
 }
 
 /****btn icon check layout******/
 
 .dish__icon-check {
   position: absolute;
-  z-index: -1;
   right: 0;
   top: 0;
-  width: 0;
+  width: $btn-menu-height;
   height: $btn-menu-height;
   background-color: $tertiary_color;
   font-size: $font-size-xbig;
@@ -160,11 +158,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: z-index 0.5s, width 0.5s ease-in-out; //transition
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out; //transition
   & i {
     color: $fourth_color;
     transform: rotate(60deg);
-    transition: transform 0.25s ease-in-out; //transition
+    transition: transform 0.5s ease-in-out; //transition
   }
 }
 
