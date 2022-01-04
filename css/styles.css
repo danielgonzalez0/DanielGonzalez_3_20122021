@@ -67,6 +67,9 @@
   transition: transform 0.25s, color 0.35s; }
 
 /*box-sizing set up*/
+:root {
+  box-sizing: border-box; }
+
 * {
   box-sizing: inherit; }
 
@@ -397,7 +400,7 @@ footer {
   align-items: flex-start;
   padding: 10px 0 0 10px;
   width: 80%;
-  height: calc(100% - 10px);
+  height: 100%;
   transition: width 0.3s ease-in-out; }
 
 .dish__title {
@@ -433,7 +436,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding-bottom: 10px;
   transition: transform 0.5s ease-in-out; }
 
 /****btn icon check layout******/
