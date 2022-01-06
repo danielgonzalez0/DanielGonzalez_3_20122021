@@ -8,6 +8,7 @@
   border: none;
   text-decoration: none; }
 
+/*************keyframes definition***************/
 @keyframes menu_apparition {
   0% {
     transform: translateY(70px);
@@ -431,7 +432,7 @@ footer {
   padding: 10px 0 0 10px;
   width: 80%;
   height: 100%;
-  transition: width 0.3s ease-in-out; }
+  transition: width 0.2s ease-in-out; }
 
 .dish__title {
   margin: 0;
@@ -466,7 +467,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  transition: transform 0.5s ease-in-out; }
+  transition: transform 0.25s ease-in-out; }
 
 /****btn icon check layout******/
 .dish__icon-check {
@@ -484,11 +485,11 @@ footer {
   align-items: center;
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform 0.5s ease-in-out; }
+  transition: transform 0.25s ease-in-out; }
   .dish__icon-check i {
     color: #fff;
     transform: rotate(60deg);
-    transition: transform 0.5s ease-in-out; }
+    transition: transform 0.25s ease-in-out; }
 
 /*****order button layout******/
 .btn-wrapper {
