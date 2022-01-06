@@ -1,0 +1,12 @@
+$translate_size: $btn-menu-height;
+
+@keyframes menu_apparition {
+  0% {
+    transform: translateY($translate_size);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

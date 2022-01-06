@@ -46,3 +46,8 @@ $hover-shadow-color: darken($background_color, 20%);
 $defaultRadius: 5px;
 $btnMenuRadius: 15px;
 $cardRadius: 20px;
+
+//animation btn menu:
+$num_menu: 9;
+$anim_menu_duration: 1000ms;
+$anim_menu_delay: $anim_menu_duration / $num_menu;

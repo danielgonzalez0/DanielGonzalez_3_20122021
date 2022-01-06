@@ -1,0 +1,131 @@
+[33mcommit 44f6b63c6040f133837b2c87a2849bc71ca1f6e5[m[33m ([m[1;36mHEAD -> [m[1;32mdeveloppement[m[33m)[m
+Author: Daniel Gonzalez <daniel.gonzalez.02@gmail.com>
+Date:   Tue Jan 4 09:46:40 2022 +0100
+
+    correction des boutons menus pour chrome et opera => taille class leftCol et text-overflow
+
+[33mcommit 9bda61877aa667058acdcccb9e21d174303be35f[m[33m ([m[1;31morigin/developpement[m[33m)[m
+Author: Daniel Gonzalez <daniel.gonzalez.02@gmail.com>
+Date:   Mon Jan 3 15:34:26 2022 +0100
+
+    déploiement bouton favori sur le projet
+
+[33mcommit 781277ab836aa9c9796db117222562bd10179b27[m
+Author: Daniel Gonzalez <daniel.gonzalez.02@gmail.com>
+Date:   Mon Jan 3 14:33:43 2022 +0100
+
+    mise en place CSS & HTML bouton favori sur un menu + test
+
+[33mcommit 5a740497a5a33d78bea04fdf3535a06ea44e95e9[m
+Author: Daniel Gonzalez <daniel.gonzalez.02@gmail.com>
+Date:   Fri Dec 31 09:11:27 2021 +0100
+
+    ajustement mineur animation css btn plat
+
+[33mcommit fa43cec4d2fc579b20b54555b1a58215e8548799[m
+Author: Daniel Gonzalez <daniel.gonzalez.02@gmail.com>
+Date:   Fri Dec 31 09:07:14 2021 +0100
+
+    ajustement mineur animation css btn plat  et position icon check des btn plat
+
+[33mcommit 463e5ff4f6e28763f3d017fd7b0e0a5767984540[m
+Author: Daniel Gonzalez <daniel.gonzalez.02@gmail.com>
+Date:   Thu Dec 30 11:32:19 2021 +0100
+
+    mise en place animation CSS des btn menu
+
+[33mcommit 1b81a996b6fee45ae0d68324f22aa97ead63d593[m
+Author: Daniel Gonzalez <daniel.gonzalez.02@gmail.com>
+Date:   Wed Dec 29 16:30:42 2021 +0100
+
+    mise en place effet de survol bouton menu sans animation
+
+[33mcommit 4ebe2ee8016ad104843a5e5ce44021cae60cec64[m
+Author: Daniel Gonzalez <daniel.gonzalez.02@gmail.com>
+Date:   Wed Dec 29 12:21:54 2021 +0100
+
+    correction mixin box-shadow + MAJ mixin dans partiels + amélioration indentation sass
+
+[33mcommit 92800aa44de33c75c22cce399ae1869a5f90bbcf[m
+Author: Daniel Gonzalez <daniel.gonzalez.02@gmail.com>
+Date:   Tue Dec 28 18:41:20 2021 +0100
+
+    mise en place css page menu
+
+[33mcommit 1c74614eca50771aa44e4cef61b11bc8796f3a73[m
+Author: Daniel Gonzalez <daniel.gonzalez.02@gmail.com>
+Date:   Tue Dec 28 14:47:45 2021 +0100
+
+    mise en place CSS footer + ajout lien vers acceuil dans logo header
+
+[33mcommit deef4e8fc1fdca73944b1eacf047ee1aec45b843[m
+Author: Daniel Gonzalez <daniel.gonzalez.02@gmail.com>
+Date:   Mon Dec 27 23:14:41 2021 +0100
+
+    CSS section card + modif structure html section card
+
+[33mcommit 8051109cd6c4d00a376727d2790f4724a8c598de[m
+Author: Daniel Gonzalez <daniel.gonzalez.02@gmail.com>
+Date:   Mon Dec 27 21:24:25 2021 +0100
+
+    css section selection 1ere version finalisée
+
+[33mcommit eb50da3dd7d76d9b82551b94c4ade1f6106e0857[m
+Author: Daniel Gonzalez <daniel.gonzalez.02@gmail.com>
+Date:   Mon Dec 27 17:35:38 2021 +0100
+
+    ajout fonction + mixin border-radius & debut css section selection
+
+[33mcommit 78e301720ea334e1ac5d0a35e6b45e88a5194a0c[m
+Author: Daniel Gonzalez <daniel.gonzalez.02@gmail.com>
+Date:   Mon Dec 27 16:58:25 2021 +0100
+
+    ajout style css main-tn & section presentation + creation mixin box-shadow
+
+[33mcommit fe99b8a415fc553bfb489ed3cea2f194a4ac6217[m
+Author: Daniel Gonzalez <daniel.gonzalez.02@gmail.com>
+Date:   Mon Dec 27 15:08:08 2021 +0100
+
+    section localisation ajout box-shadow
+
+[33mcommit 43c108dec382790ddd488af320576a31d684bce9[m
+Author: Daniel Gonzalez <daniel.gonzalez.02@gmail.com>
+Date:   Mon Dec 27 14:55:53 2021 +0100
+
+    mise en place css section localisation
+
+[33mcommit 6d814b772e572a3125ff1375e954a84d9daafc3e[m
+Author: Daniel Gonzalez <daniel.gonzalez.02@gmail.com>
+Date:   Mon Dec 27 13:28:43 2021 +0100
+
+    mise en place css header
+
+[33mcommit 7523b2adf57ae2eed8d7729bfa0b8f7a5ba48cb0[m
+Author: Daniel Gonzalez <daniel.gonzalez.02@gmail.com>
+Date:   Thu Dec 23 16:09:56 2021 +0100
+
+    ajout lien html page index + creation et structure html page menu_1
+
+[33mcommit a797070c73531f5743fffda05751dba743e82f31[m
+Author: Daniel Gonzalez <daniel.gonzalez.02@gmail.com>
+Date:   Tue Dec 21 16:15:59 2021 +0100
+
+    ajout de la structure HTML pour la page d'acceuil
+
+[33mcommit db6d6b5f1ee292ec74e16d1ac44ba0978cc2c6d1[m
+Author: Daniel Gonzalez <daniel.gonzalez.02@gmail.com>
+Date:   Mon Dec 20 17:45:48 2021 +0100
+
+    sass: création global_style=> box-sizing style:  body,  img, et wrapper
+
+[33mcommit aba5e99732f43f5ba65c64d6e3c44d80df67cee8[m
+Author: Daniel Gonzalez <daniel.gonzalez.02@gmail.com>
+Date:   Mon Dec 20 17:15:58 2021 +0100
+
+    ajout html: header et section localisation + sass creation typography et variables
+
+[33mcommit a46a50f2f48bdf19aaba8402aeaf9c770689e632[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: Daniel Gonzalez <daniel.gonzalez.02@gmail.com>
+Date:   Fri Dec 17 17:22:32 2021 +0100
+
+    ajout structure minimum: HTML CSS SASS

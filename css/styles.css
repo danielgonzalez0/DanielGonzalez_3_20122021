@@ -8,6 +8,13 @@
   border: none;
   text-decoration: none; }
 
+@keyframes menu_apparition {
+  0% {
+    transform: translateY(70px);
+    opacity: 0.1; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
 /************* elements reusable ****************/
 .main_btn {
   background-image: linear-gradient(#ff79da, #9356dc);
@@ -64,7 +71,7 @@
   transition: transform 0.25s; }
 
 .btn-like__empty {
-  transition: transform 0.25s, color 0.35s; }
+  transition: transform 0.25s, color 0.25s; }
 
 /*box-sizing set up*/
 :root {
@@ -380,7 +387,30 @@ footer {
   box-shadow: 5px 5px 5px gainsboro;
   display: flex;
   transition: box-shadow 0.5s ease-in-out;
+  /*****animation menu****/
+  transform-origin: top;
+  animation-name: menu_apparition;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-in-out;
   /****hover effect btn menu*****/ }
+  .menu__detail__btn-dish--1 {
+    animation-delay: 111.1111111111ms; }
+  .menu__detail__btn-dish--2 {
+    animation-delay: 222.2222222222ms; }
+  .menu__detail__btn-dish--3 {
+    animation-delay: 333.3333333333ms; }
+  .menu__detail__btn-dish--4 {
+    animation-delay: 444.4444444444ms; }
+  .menu__detail__btn-dish--5 {
+    animation-delay: 555.5555555556ms; }
+  .menu__detail__btn-dish--6 {
+    animation-delay: 666.6666666667ms; }
+  .menu__detail__btn-dish--7 {
+    animation-delay: 777.7777777778ms; }
+  .menu__detail__btn-dish--8 {
+    animation-delay: 888.8888888889ms; }
+  .menu__detail__btn-dish--9 {
+    animation-delay: 1000ms; }
   .menu__detail__btn-dish:hover {
     box-shadow: 5px 5px 5px #c2c2c2; }
   .menu__detail__btn-dish:hover .dish__icon-check {
