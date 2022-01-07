@@ -3,12 +3,13 @@
 /*font-family: 'Shrikhand', cursive;*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
 /*font-family: 'Roboto', sans-serif;*/
-.main_btn, .btn-like, .header__btn, form .form__btn, .selection__btn, .footer__link, .menu__detail__btn-dish {
+.main_btn, .btn-like, .header__btn, form .form__btn, .selection__btn, .menu__detail__btn-dish, .footer__link {
   /******btn & link default style*******/
   border: none;
   text-decoration: none; }
 
 /*************keyframes definition***************/
+/******keydrames btn menu*************/
 @keyframes menu_apparition {
   0% {
     transform: translateY(70px);
@@ -16,6 +17,27 @@
   100% {
     transform: translateY(0);
     opacity: 1; } }
+/******keyframes loading spinner*******/
+@keyframes loader_disappear {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes main_appear {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes animateC {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+@keyframes animate {
+  0% {
+    transform: rotate(45deg); }
+  100% {
+    transform: rotate(405deg); } }
 /************* elements reusable ****************/
 .main_btn {
   background-image: linear-gradient(#ff79da, #9356dc);
@@ -97,6 +119,87 @@ img {
 .wrapper {
   width: 90%;
   margin: 0 auto; }
+
+/***********loading spinner layout************/
+.loader {
+  background-color: whitesmoke;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  animation-name: loader_disappear;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.3s;
+  animation-delay: 1.5s;
+  opacity: 1; }
+
+.loading_page {
+  animation-name: main_appear;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.5s;
+  animation-delay: 1.5s; }
+
+.ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  background: transparent;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 150px;
+  font-family: sans-serif;
+  font-size: 20px;
+  color: #9356dc;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px #99e2d0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); }
+  .ring:before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+    border-top: 3px solid #9356dc;
+    border-right: 3px solid #9356dc;
+    border-radius: 50%;
+    animation: animateC 2s linear infinite; }
+
+.ring__span {
+  display: block;
+  position: absolute;
+  top: calc(50% - 2px);
+  left: 50%;
+  width: 50%;
+  height: 4px;
+  background: transparent;
+  transform-origin: left;
+  animation: animate 2s linear infinite; }
+  .ring__span:before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #9356dc;
+    top: -6px;
+    right: -8px;
+    box-shadow: 0 0 20px #9356dc; }
 
 /******************header start*************************/
 header {
@@ -302,35 +405,6 @@ form {
   padding-top: 10px; }
 
 /**********************restaurant list end**********************************/
-/***********************footer start*********************/
-footer {
-  background-color: #383838;
-  color: #fff;
-  padding: 40px 20px; }
-  footer ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin: 0;
-    font-size: 1.25rem; }
-  footer li {
-    padding: 5px 0; }
-  footer i {
-    display: block;
-    width: 20px;
-    height: 20px;
-    font-size: 1rem; }
-
-.footer__title-logo {
-  margin: 0;
-  font-family: "Shrikhand", "cursive", "Times New Roman", Times, serif;
-  font-size: 1.5rem;
-  padding-bottom: 20px;
-  color: #e6e6e6; }
-
-.footer__link {
-  color: #fff; }
-
-/***********************footer end***********************/
 /*********************menu page start************************/
 .menu-wrapper {
   background-color: whitesmoke; }
@@ -501,5 +575,34 @@ footer {
   width: 180px; }
 
 /*********************menu page end************************/
+/***********************footer start*********************/
+footer {
+  background-color: #383838;
+  color: #fff;
+  padding: 40px 20px; }
+  footer ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    font-size: 1.25rem; }
+  footer li {
+    padding: 5px 0; }
+  footer i {
+    display: block;
+    width: 20px;
+    height: 20px;
+    font-size: 1rem; }
+
+.footer__title-logo {
+  margin: 0;
+  font-family: "Shrikhand", "cursive", "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+  color: #e6e6e6; }
+
+.footer__link {
+  color: #fff; }
+
+/***********************footer end***********************/
 
 /*# sourceMappingURL=styles.css.map */
