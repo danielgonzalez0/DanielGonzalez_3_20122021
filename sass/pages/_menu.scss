@@ -70,6 +70,8 @@
   @include border-radius('all', $btnMenuRadius);
   @include _DG_box-shadow_default();
   display: flex;
+  width: 100%; //new for tablet & laptop screen
+  max-width: 600px; //new for tablet & laptop screen
   transition: box-shadow 0.5s ease-in-out; //transition
 
   /*****animation menu****/
@@ -192,6 +194,18 @@
 
 .order_btn {
   width: 180px;
+}
+
+/**********media queries***************/
+
+@media screen and (min-width: 576px) {
+  .menu__detail {
+    display: flex;
+    align-items: center;
+  }
+  .menu__card_name {
+    text-align: center;
+  }
 }
 
 /*********************menu page end************************/

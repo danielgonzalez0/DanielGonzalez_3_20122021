@@ -287,6 +287,8 @@ form {
   cursor: pointer;
   display: flex;
   align-items: center;
+  width: 100%;
+  max-width: 550px;
   position: relative;
   box-shadow: 5px 5px 5px gainsboro; }
   .selection__btn i {
@@ -327,6 +329,20 @@ form {
   flex: 0 0 80%;
   text-align: start; }
 
+/**********media queries***************/
+@media screen and (min-width: 650px) {
+  .selection {
+    margin-bottom: 50px; }
+
+  .selection,
+  .selection__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+  .selection__h2 {
+    padding: 50px 0 50px 0; } }
 /*****************selection section end***************/
 /**********************restaurant list start********************************/
 .card_list {
@@ -461,6 +477,8 @@ form {
   border-radius: 15px;
   box-shadow: 5px 5px 5px gainsboro;
   display: flex;
+  width: 100%;
+  max-width: 600px;
   transition: box-shadow 0.5s ease-in-out;
   /*****animation menu****/
   transform-origin: top;
@@ -574,6 +592,14 @@ form {
 .order_btn {
   width: 180px; }
 
+/**********media queries***************/
+@media screen and (min-width: 576px) {
+  .menu__detail {
+    display: flex;
+    align-items: center; }
+
+  .menu__card_name {
+    text-align: center; } }
 /*********************menu page end************************/
 /***********************footer start*********************/
 footer {

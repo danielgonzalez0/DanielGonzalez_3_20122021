@@ -27,6 +27,8 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+  width: 100%; //new for tablet & laptop screen
+  max-width: 550px; //new for tablet & laptop screen
   position: relative;
   @include _DG_box-shadow_default();
   & i {
@@ -78,6 +80,25 @@
   & p {
     flex: 0 0 80%;
     text-align: start;
+  }
+}
+
+/**********media queries***************/
+
+@media screen and (min-width: 650px) {
+  .selection {
+    margin-bottom: 50px;
+  }
+
+  .selection,
+  .selection__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .selection__h2 {
+    padding: 50px 0 50px 0;
   }
 }
 
