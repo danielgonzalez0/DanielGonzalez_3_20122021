@@ -438,6 +438,7 @@ form {
   .bkg-menu__figure img {
     display: block;
     object-fit: cover;
+    object-position: center 65%;
     width: 100%;
     height: 100%; }
 
