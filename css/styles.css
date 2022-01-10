@@ -315,7 +315,7 @@ form {
     background-color: #f4eefc; }
 
 .selection__btn {
-  height: 50px; }
+  height: 70px; }
   .selection__btn span {
     display: inline-block;
     width: 30px;
@@ -488,22 +488,24 @@ form {
   animation-timing-function: ease-in-out;
   /****hover effect btn menu*****/ }
   .menu__detail__btn-dish--1 {
-    animation-delay: 111.1111111111ms; }
+    animation-delay: 100ms; }
   .menu__detail__btn-dish--2 {
-    animation-delay: 222.2222222222ms; }
+    animation-delay: 200ms; }
   .menu__detail__btn-dish--3 {
-    animation-delay: 333.3333333333ms; }
+    animation-delay: 300ms; }
   .menu__detail__btn-dish--4 {
-    animation-delay: 444.4444444444ms; }
+    animation-delay: 400ms; }
   .menu__detail__btn-dish--5 {
-    animation-delay: 555.5555555556ms; }
+    animation-delay: 500ms; }
   .menu__detail__btn-dish--6 {
-    animation-delay: 666.6666666667ms; }
+    animation-delay: 600ms; }
   .menu__detail__btn-dish--7 {
-    animation-delay: 777.7777777778ms; }
+    animation-delay: 700ms; }
   .menu__detail__btn-dish--8 {
-    animation-delay: 888.8888888889ms; }
+    animation-delay: 800ms; }
   .menu__detail__btn-dish--9 {
+    animation-delay: 900ms; }
+  .menu__detail__btn-dish--10 {
     animation-delay: 1000ms; }
   .menu__detail__btn-dish:hover {
     box-shadow: 5px 5px 5px #c2c2c2; }
