@@ -521,11 +521,12 @@ form {
 /****btn title & description layout******/
 .dish__leftCol {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
   padding: 10px 0 0 10px;
-  width: 80%;
+  width: 70%;
   height: 100%;
   transition: width 0.2s ease-in-out; }
 
