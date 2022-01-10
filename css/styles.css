@@ -216,10 +216,12 @@ header {
   height: 50px;
   width: 50px;
   background-color: white;
-  position: absolute; }
-  .header__btn a {
-    color: #000000;
-    font-size: 1.5rem; }
+  cursor: pointer;
+  color: #000000;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .header__btn--visible {
   display: none; }
@@ -312,22 +314,21 @@ form {
   .selection__btn__color--modified:hover {
     background-color: #f4eefc; }
 
-.selection__btn span {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 30px;
-  color: #fff;
-  background-color: #9356dc;
-  font-size: 1rem;
-  position: absolute;
-  left: -15px; }
-.selection__btn p {
-  flex: 0 0 80%;
-  text-align: start; }
+.selection__btn {
+  height: 50px; }
+  .selection__btn span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    color: #fff;
+    background-color: #9356dc;
+    font-size: 1rem;
+    position: absolute;
+    left: -15px; }
 
 /**********media queries***************/
 @media screen and (min-width: 650px) {
