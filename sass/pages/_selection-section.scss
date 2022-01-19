@@ -20,10 +20,14 @@
 }
 
 .selection__btn {
+  position: relative;
+  z-index: 1;
+  height: $btn-menu-height;
   @extend %border_default;
   @include border-radius('all', 20px);
   font-weight: bold;
   font-size: $font-size-big;
+  background-color: $background_color;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -35,34 +39,9 @@
     display: block;
     flex: 0 0 20%;
     font-size: $font-size-xbig;
-  }
-  &:hover {
-    @include _DG_box-shadow_default($shadow-color: $hover-shadow-color);
-  }
-}
-
-.selection__btn__color {
-  background-color: $background_color;
-  & i {
     color: $text_tertiary_color;
   }
-  &:hover {
-    background-color: lighten($background_color, 1%);
-  }
-}
 
-.selection__btn__color--modified {
-  background-color: lighten($primary_color, 35%);
-  & i {
-    color: $primary_color;
-  }
-  &:hover {
-    background-color: lighten($primary_color, 36%);
-  }
-}
-
-.selection__btn {
-  height: $btn-menu-height;
   & span {
     display: inline-block;
     width: 30px;
@@ -77,6 +56,42 @@
     position: absolute;
     left: -15px;
   }
+  &:hover {
+    @include _DG_box-shadow_default($shadow-color: $hover-shadow-color);
+    & i {
+      color: $primary_color;
+    }
+    &::after {
+      opacity: 1;
+    }
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    right: 0;
+    height: $btn-menu-height;
+    @include border-radius('all', 20px);
+    background-color: lighten($primary_color, 36%);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms;
+  }
+}
+/* &:hover {
+    background-color: lighten($background_color, 1%);
+  }*/
+
+.selection__btn__color--modified {
+  background-color: lighten($primary_color, 35%);
+  & i {
+    color: $primary_color;
+  }
+  /* &:hover {
+    background-color: lighten($primary_color, 36%);
+  }*/
 }
 
 /**********media queries***************/
