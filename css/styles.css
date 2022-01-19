@@ -481,9 +481,15 @@ form {
 
 /******courses title layout*****/
 .menu__detail__title {
-  width: 60px;
-  border-bottom: solid 5px #99e2d0;
+  position: relative;
   font-size: 1.5rem; }
+  .menu__detail__title::after {
+    content: '';
+    display: block;
+    height: 5px;
+    position: absolute;
+    width: 60px;
+    border-bottom: solid 5px #99e2d0; }
 
 /******** dish btn layout*******/
 .menu__detail__btn-dish {

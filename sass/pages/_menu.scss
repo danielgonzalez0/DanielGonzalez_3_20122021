@@ -52,9 +52,16 @@
 /******courses title layout*****/
 
 .menu__detail__title {
-  width: 60px;
-  border-bottom: solid 5px $tertiary_color;
+  position: relative;
   font-size: $font-size-xbig;
+  &::after {
+    content: '';
+    display: block;
+    height: 5px;
+    position: absolute;
+    width: 60px;
+    border-bottom: solid 5px $tertiary_color;
+  }
 }
 
 /******** dish btn layout*******/
